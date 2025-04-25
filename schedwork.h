@@ -38,4 +38,14 @@ bool schedule(
     DailySchedule& sched
 );
 
+bool backTrack(
+  const AvailabilityMatrix& avail,
+    const size_t dailyNeed,
+    const size_t maxShifts,
+    DailySchedule& sched,
+    std::vector<size_t>& shiftsAssigned,
+    size_t day,
+    size_t slot
+);
+
 #endif
